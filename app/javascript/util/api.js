@@ -9,7 +9,7 @@ async function customFetch(url, options = {}) {
 }
 
 export function followUser(id) {
-  return customFetch(`user_follow_url_${id}`, {
+  return customFetch(`/users/${id}/follow`, {
     method: "POST",
   });
 }
